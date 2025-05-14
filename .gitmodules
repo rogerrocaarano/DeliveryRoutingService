@@ -1,0 +1,3 @@
+[submodule "GraphHopperClient"]
+	path = GraphHopperClient
+	url = https://github.com/rogerrocaarano/GraphHopperClient
