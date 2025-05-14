@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{B309C4FA-7483-4353-A743-5FCBD05771B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphHopperClient", "GraphHopperClient\GraphHopperClient\GraphHopperClient.csproj", "{8BF81CA9-B61A-465E-9060-51D1A9AE6949}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{B309C4FA-7483-4353-A743-5FCBD05771B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B309C4FA-7483-4353-A743-5FCBD05771B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B309C4FA-7483-4353-A743-5FCBD05771B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF81CA9-B61A-465E-9060-51D1A9AE6949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF81CA9-B61A-465E-9060-51D1A9AE6949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF81CA9-B61A-465E-9060-51D1A9AE6949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF81CA9-B61A-465E-9060-51D1A9AE6949}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -22,4 +22,8 @@
       <Folder Include="Features\Tracking\RegisterVehiclePosition\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\GraphHopperClient\GraphHopperClient\GraphHopperClient.csproj" />
+    </ItemGroup>
+
 </Project>
