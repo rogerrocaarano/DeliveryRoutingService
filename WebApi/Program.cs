@@ -10,6 +10,8 @@ builder.Services.AddDbContext<ServiceDbContext, InMemoryServiceDbContext>();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
+builder.WebHost.UseUrls("http://localhost:5000");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
