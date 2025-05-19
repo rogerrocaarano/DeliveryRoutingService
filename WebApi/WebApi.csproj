@@ -18,10 +18,7 @@
 
     <ItemGroup>
       <Folder Include="Common\" />
-      <Folder Include="Features\Vehicles\CreateVehicle\" />
-      <Folder Include="Features\Vehicles\DeleteVehicle\" />
-      <Folder Include="Features\Vehicles\TrackingVehicle\" />
-      <Folder Include="Features\Vehicles\RegisterVehiclePosition\" />
+      <Folder Include="Features\Vehicles\VehicleTracking\" />
     </ItemGroup>
 
     <ItemGroup>

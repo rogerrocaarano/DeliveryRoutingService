@@ -2,11 +2,11 @@ using MediatR;
 using WebApi.Domain;
 using WebApi.Persistence;
 
-namespace WebApi.Features.Vehicles.CreateVehicle;
+namespace WebApi.Features.Vehicles.VehicleRegistration;
 
-public class CreateVehicleHandler(ServiceDbContext db) : IRequestHandler<CreateVehicleCommand, Guid>
+public class AddVehicleHandler(ServiceDbContext db) : IRequestHandler<AddVehicleCommand, Guid>
 {
-    public async Task<Guid> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(AddVehicleCommand request, CancellationToken cancellationToken)
     {
         var vehicle = new Vehicle
         {

@@ -1,9 +1,9 @@
 using MediatR;
 using WebApi.Domain;
 
-namespace WebApi.Features.Vehicles.RegisterVehiclePosition;
+namespace WebApi.Features.Vehicles.VehicleTracking;
 
-public record RegisterVehiclePositionCommand(
+public record AddVehiclePositionCommand(
     Guid VehicleId,
     Coordinates Position,
     DateTime Timestamp

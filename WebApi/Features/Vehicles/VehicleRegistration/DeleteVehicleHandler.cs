@@ -1,7 +1,7 @@
 using MediatR;
 using WebApi.Persistence;
 
-namespace WebApi.Features.Vehicles.DeleteVehicle;
+namespace WebApi.Features.Vehicles.VehicleRegistration;
 
 public class DeleteVehicleHandler(ServiceDbContext db) : IRequestHandler<DeleteVehicleCommand>
 {

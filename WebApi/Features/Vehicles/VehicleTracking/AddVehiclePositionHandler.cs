@@ -2,11 +2,11 @@ using MediatR;
 using WebApi.Domain;
 using WebApi.Persistence;
 
-namespace WebApi.Features.Vehicles.RegisterVehiclePosition;
+namespace WebApi.Features.Vehicles.VehicleTracking;
 
-public class RegisterVehiclePositionHandler(ServiceDbContext db) : IRequestHandler<RegisterVehiclePositionCommand, Guid>
+public class AddVehiclePositionHandler(ServiceDbContext db) : IRequestHandler<AddVehiclePositionCommand, Guid>
 {
-    public async Task<Guid> Handle(RegisterVehiclePositionCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(AddVehiclePositionCommand request, CancellationToken cancellationToken)
     {
         var position = new VehiclePosition(
             Guid.NewGuid(),

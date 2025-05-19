@@ -1,9 +1,9 @@
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using WebApi.Domain;
 using WebApi.Persistence;
-using Microsoft.EntityFrameworkCore;
 
-namespace WebApi.Features.Vehicles.RegisterVehiclePosition;
+namespace WebApi.Features.Vehicles.VehicleTracking;
 
 public class GetVehiclePositionsHandler(ServiceDbContext db) : IRequestHandler<GetVehiclePositionsQuery, List<VehiclePosition>>
 {

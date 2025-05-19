@@ -1,5 +1,5 @@
 using MediatR;
 
-namespace WebApi.Features.Vehicles.DeleteVehicle;
+namespace WebApi.Features.Vehicles.VehicleRegistration;
 
 public record DeleteVehicleCommand(Guid VehicleId) : IRequest;
