@@ -18,6 +18,7 @@
 
     <ItemGroup>
       <Folder Include="Common\" />
+      <Folder Include="Features\Delivery\" />
       <Folder Include="Features\Vehicles\VehicleTracking\" />
     </ItemGroup>
 

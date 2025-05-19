@@ -2,7 +2,7 @@ using MediatR;
 using WebApi.Domain;
 using WebApi.Persistence;
 
-namespace WebApi.Features.Vehicles.VehicleRegistration;
+namespace WebApi.Features.Vehicles.VehicleManagement;
 
 public class AddVehicleHandler(ServiceDbContext db) : IRequestHandler<AddVehicleCommand, Guid>
 {
