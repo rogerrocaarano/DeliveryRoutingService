@@ -8,7 +8,7 @@ public static class RoutesEndpointExtensions
 {
     public static void MapRoutesEndpoints(this WebApplication app)
     {
-        app.MapPost("/routes/create", async (AddDeliveryRouteCommand command, ISender sender) =>
+        app.MapPost("/routes/create", async (AddRouteCommand command, ISender sender) =>
         {
             var routeId = await sender.Send(command);
             return Results.Created($"/routes/{routeId}", routeId);
@@ -23,7 +23,7 @@ public static class RoutesEndpointExtensions
 
         app.MapGet("/routes/{routeId}", async (Guid routeId, ISender sender) =>
         {
-            var route = await sender.Send(new GetDeliveryRouteQuery(routeId));
+            var route = await sender.Send(new GetRouteQuery(routeId));
             return Results.Ok(route);
         });
     }

@@ -4,9 +4,9 @@ using WebApi.Persistence;
 
 namespace WebApi.Features.Delivery.RouteManagement;
 
-public class GetDeliveryRouteHandler(ServiceDbContext db) : IRequestHandler<GetDeliveryRouteQuery, DeliveryRoute>
+public class GetRouteHandler(ServiceDbContext db) : IRequestHandler<GetRouteQuery, DeliveryRoute>
 {
-    public async Task<DeliveryRoute> Handle(GetDeliveryRouteQuery request, CancellationToken cancellationToken)
+    public async Task<DeliveryRoute> Handle(GetRouteQuery request, CancellationToken cancellationToken)
     {
         var route = await db.DeliveryRoutes.FindAsync([request.RouteId], cancellationToken);
         if (route == null)

@@ -3,4 +3,4 @@ using WebApi.Domain;
 
 namespace WebApi.Features.Delivery.RouteManagement;
 
-public record GetDeliveryRouteQuery(Guid RouteId) : IRequest<DeliveryRoute>;
+public record GetRouteQuery(Guid RouteId) : IRequest<DeliveryRoute>;

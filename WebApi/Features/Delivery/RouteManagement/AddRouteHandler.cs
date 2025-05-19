@@ -3,9 +3,9 @@ using WebApi.Persistence;
 
 namespace WebApi.Features.Delivery.RouteManagement;
 
-public class AddDeliveryRouteHandler(ServiceDbContext db) : IRequestHandler<AddDeliveryRouteCommand, Guid>
+public class AddRouteHandler(ServiceDbContext db) : IRequestHandler<AddRouteCommand, Guid>
 {
-    public async Task<Guid> Handle(AddDeliveryRouteCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(AddRouteCommand request, CancellationToken cancellationToken)
     {
         var route = new Domain.DeliveryRoute
         {
