@@ -1,12 +1,12 @@
 ﻿using MediatR;
 using WebApi.Persistence;
 
-namespace WebApi.Features.DeliveryRoutes.AddDeliveryOrderToDeliveryRoute;
+namespace WebApi.Features.Delivery.OrderManagement;
 
-public class AddDeliveryOrderToDeliveryRouteHandler(ServiceDbContext db)
-    : IRequestHandler<AddDeliveryOrderToDeliveryRouteCommand>
+public class AddOrderToRouteHandler(ServiceDbContext db)
+    : IRequestHandler<AddOrderToRouteCommand>
 {
-    public async Task Handle(AddDeliveryOrderToDeliveryRouteCommand request, CancellationToken cancellationToken)
+    public async Task Handle(AddOrderToRouteCommand request, CancellationToken cancellationToken)
     {
         var route = await db.DeliveryRoutes.FindAsync([request.RouteId], cancellationToken);
         if (route == null)

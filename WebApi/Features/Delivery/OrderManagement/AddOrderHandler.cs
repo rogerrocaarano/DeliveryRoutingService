@@ -3,11 +3,11 @@ using WebApi.Domain;
 using WebApi.Domain.Enums;
 using WebApi.Persistence;
 
-namespace WebApi.Features.DeliveryOrders.CreateDeliveryOrder;
+namespace WebApi.Features.Delivery.OrderManagement;
 
-public class CreateOrderHandler(ServiceDbContext db) : IRequestHandler<CreateOrderCommand, Guid>
+public class AddOrderHandler(ServiceDbContext db) : IRequestHandler<AddOrderCommand, Guid>
 {
-    public async Task<Guid> Handle(CreateOrderCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(AddOrderCommand request, CancellationToken cancellationToken)
     {
         var order = new DeliveryOrder
         {

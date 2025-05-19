@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using WebApi.Domain;
 
-namespace WebApi.Features.DeliveryRoutes.CreateDeliveryRoute;
+namespace WebApi.Features.Delivery.RouteManagement;
 
-public record CreateDeliveryRouteCommand(
+public record AddDeliveryRouteCommand(
     Guid AssignedVehicleId,
     Coordinates StartingPoint
 ) : IRequest<Guid>;

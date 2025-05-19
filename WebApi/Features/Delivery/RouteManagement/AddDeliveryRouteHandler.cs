@@ -1,11 +1,11 @@
 ﻿using MediatR;
 using WebApi.Persistence;
 
-namespace WebApi.Features.DeliveryRoutes.CreateDeliveryRoute;
+namespace WebApi.Features.Delivery.RouteManagement;
 
-public class CreateDeliveryRouteHandler(ServiceDbContext db) : IRequestHandler<CreateDeliveryRouteCommand, Guid>
+public class AddDeliveryRouteHandler(ServiceDbContext db) : IRequestHandler<AddDeliveryRouteCommand, Guid>
 {
-    public async Task<Guid> Handle(CreateDeliveryRouteCommand request, CancellationToken cancellationToken)
+    public async Task<Guid> Handle(AddDeliveryRouteCommand request, CancellationToken cancellationToken)
     {
         var route = new Domain.DeliveryRoute
         {

@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using WebApi.Domain;
 
-namespace WebApi.Features.DeliveryOrders.CreateDeliveryOrder;
+namespace WebApi.Features.Delivery.OrderManagement;
 
-public record CreateOrderCommand(
+public record AddOrderCommand(
     Guid OrderId,
     Coordinates DeliveryPoint,
     float Volume
