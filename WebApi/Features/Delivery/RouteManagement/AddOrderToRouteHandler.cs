@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using WebApi.Persistence;
 
-namespace WebApi.Features.Delivery.OrderManagement;
+namespace WebApi.Features.Delivery.RouteManagement;
 
 public class AddOrderToRouteHandler(ServiceDbContext db)
     : IRequestHandler<AddOrderToRouteCommand>
