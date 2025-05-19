@@ -1,3 +1,7 @@
 ﻿namespace WebApi.Domain;
 
-public record Vehicle(Guid Id, float VolumeCapacity);
+public class Vehicle
+{
+    public Guid Id { get; set; }
+    public float Capacity { get; set; }
+}

@@ -1,3 +1,6 @@
 ﻿namespace WebApi.Domain;
 
-public record Coordinates(float Latitude, float Longitude);
+public record Coordinates(
+    float Latitude,
+    float Longitude
+);
